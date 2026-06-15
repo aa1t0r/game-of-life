@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Conway's Game of Life</h1>
+    <p class="subtitle">A tiny universe with four rules. Build it one issue at a time.</p>
+  </header>
+
+  <main>
+    <!-- The grid is drawn here by js/render.js -->
+    <canvas id="board"></canvas>
+
+    <!-- The buttons exist so you have targets to wire up. They do nothing
+         until you connect them in js/main.js / js/controls.js. -->
+    <section class="controls">
+      <button id="step">Step</button>
+      <button id="play">Play / Pause</button>
+      <button id="clear">Clear</button>
+      <button id="random">Random</button>
+      <label>Speed
+        <input id="speed" type="range" min="1" max="30" value="10" />
+      </label>
+      <span class="stats">Gen: <b id="generation">0</b> · Alive: <b id="population">0</b></span>
+    </section>
+  </main>
+
+  <!-- type="module" lets us split code into files that import each other. -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

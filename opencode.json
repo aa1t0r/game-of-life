@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "melkor": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Melkor LiteLLM",
+      "options": {
+        "baseURL": "http://melkor:4000/v1",
+        "apiKey": "{env:MELKOR_LITELLM_KEY}"
+      },
+      "models": {
+        "gpt-oss-20b": { "name": "gpt-oss-20b (recommended)" },
+        "qwen3.5": { "name": "qwen3.5 (fallback)" }
+      }
+    }
+  }
+}

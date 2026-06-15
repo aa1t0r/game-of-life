@@ -1,0 +1,12 @@
+# Secrets — NEVER commit your API key
+.env
+.env.local
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# Node (only if you add tooling later)
+node_modules/
