@@ -44,7 +44,25 @@ js/controls.js      buttons, slider, mouse
 js/patterns.js      famous shapes (glider, blinker, block)
 js/main.js          wires everything together
 tests/engine.test.js  tests for the rules  (run: node --test)
+board.sh            one-time: builds your GitHub project board
+bootstrap.sh        one-time: creates the labels, milestones and issues
 ```
+
+## Project board
+
+All the work is tracked as GitHub issues, organized on a **project board** so you
+can pick them up **in order**, top to bottom. Create your board once (after
+`gh auth login`):
+
+```bash
+bash board.sh
+```
+
+This makes a board on your account, links it to this repo (look under the repo's
+**Projects** tab), and adds every issue in order — Milestone 0 in **🎯 To Do**,
+the rest waiting in **📋 Backlog**. As you work, move each card across the
+columns: **📋 Backlog → 🎯 To Do → 🚧 In Progress → 👀 In Review → ✅ Done**.
+See [LEARNING_GUIDE.md](LEARNING_GUIDE.md) for how to work the board.
 
 ## Tests
 

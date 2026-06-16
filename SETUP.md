@@ -61,12 +61,20 @@ must be on the home Wi-Fi (or Tailscale) to reach it.
 
 ## 5. Make your project board
 
-Go to your repo on github.com → **Projects** tab → **New project** →
-**Board**. Make 5 columns:
+One command builds your board and fills it with every issue, in order:
 
-```
-📋 Backlog   🎯 To Do   🚧 In Progress   👀 In Review   ✅ Done
+```bash
+bash board.sh
 ```
 
-Then add the issues (they were created for you) to the board. Read
-`LEARNING_GUIDE.md` next — it explains how you'll work.
+It creates the board on your account, links it to your repo, makes the 5
+columns (📋 Backlog · 🎯 To Do · 🚧 In Progress · 👀 In Review · ✅ Done) and
+adds the issues — Milestone 0 in **To Do**, the rest in **Backlog**.
+
+Open the board (the script prints the link), switch the view layout to
+**Board**, and group by **Stage** to see the columns. Then read
+`LEARNING_GUIDE.md` — it explains how you'll work.
+
+> Needs `jq` installed (`sudo apt install jq`) and `gh auth login` done as
+> **aa1t0r**. Read `board.sh` first — it's short, and it shows how a board is
+> built by a tool.

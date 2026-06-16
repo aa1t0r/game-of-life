@@ -91,6 +91,29 @@ each one ends with something you can *see* working.
 
 Open the **Issues** tab to see every task. Start at the top of **M0**.
 
+### Your board 🧮
+
+Everything is also on a **project board** so you can see the whole plan at once
+and pick tasks up **in order**. In Milestone 0 you'll create it with one command:
+
+```bash
+bash board.sh
+```
+
+That builds a board on your account, links it to your repo, and drops every
+issue onto it in order — **Milestone 0 in "🎯 To Do", the rest in "📋 Backlog"**.
+
+To see it as a real kanban board: open the board, switch the view's layout to
+**Board**, and **group by "Stage"**. You'll get five columns that match the loop:
+
+```
+📋 Backlog → 🎯 To Do → 🚧 In Progress → 👀 In Review → ✅ Done
+```
+
+Each time you start an issue, drag its card to **🚧 In Progress**; when you open
+the PR, move it to **👀 In Review**; when it merges, **✅ Done**. The board is
+your map — always work the top card of **🎯 To Do**.
+
 ---
 
 ## Definition of "done" ✅
